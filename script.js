@@ -35,7 +35,7 @@ async function getCurrentImageOfTheDay() {
   const currentDate = new Date().toISOString().split("T")[0];
   const data = await fetchData(currentDate);
   if (!data) return;
-  renderArticle(data, "PIcture of the Day");
+  renderArticle(data, "NASA Picture of the Day");
 }
 
 async function fetchData(date) {
