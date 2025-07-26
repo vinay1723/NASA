@@ -15,7 +15,7 @@ window.onload = () => {
   getCurrentImageOfTheDay();
 };
 
-const api_key = "LCc8yC3V8qH2zpKDNlqx2G9jEKIw2kwPOhuNCX2a";
+const api_key = "DPr6Udi8q3izn6OQebtrCWKax7hYbhJFFwNv9Epu";
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -60,7 +60,6 @@ function saveSearch(date) {
 
 function addSearchToHistory() {
   const historyDates = JSON.parse(localStorage.getItem("dates"));
-  console.log(historyDates);
   if (!historyDates) return;
 
   historyDates.forEach((date) => {
